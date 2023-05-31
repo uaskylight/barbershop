@@ -1,2 +1,2 @@
 # barbershop
- barbershop
+module-1
