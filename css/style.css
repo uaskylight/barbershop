@@ -50,6 +50,10 @@ a {
 ul {
   list-style: none;
 }
+.link:hover,
+.link:focus{
+  color: var(--hover-color);
+}
 
 /* button */
 
@@ -62,12 +66,36 @@ ul {
   cursor: pointer;
 }
 
+.btn-header {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.btn-header:hover,
+.btn-header:focus {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+.buttom {
+  border: 1px solid #FF6C00;
+  background-color: inherit;
+  border-radius: 25px;
+}
+.buttom:hover,
+.buttom:focus {
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
 /* header */
 
 .header {
   background-color: #555555;
 }
-.header-link {
+.header-logo {
 }
 .header-list {
 }
@@ -82,18 +110,7 @@ ul {
 
   color: var(--white-color);
 }
-.header-item-link:hover,
-.header-item-link:focus {
-  color: var(--hover-color);
-}
 .tel {
-}
-.btn-header {
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-
-  background-color: var(--accent-color);
-  color: var(--white-color);
 }
 
 /* hero */
@@ -178,10 +195,6 @@ ul {
   color: var(--text-color-secondary);
 }
 .btn-about {
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-
-  background-color: inherit;
 }
 
 /* prices */
@@ -223,11 +236,6 @@ ul {
 .prices-item-right {
 }
 .btn-prices {
-  background-color: inherit;
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-
-  color: var(--white-color);
 }
 
 /* oldschool */
@@ -428,10 +436,10 @@ ul {
 .footer-item {
 }
 .footer-item a {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 
-color: var(--text-color);
+  color: var(--text-color);
 }
