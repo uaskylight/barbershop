@@ -1,0 +1,215 @@
+/* variables */
+
+:root {
+  --body-color: #e5e5e5;
+  --white-color: #ffffff;
+  --hover-color: #ff6c00;
+  --accent-color: #ff6c00;
+  --second-color: #9da4bd;
+  --text-color: #303030;
+  --title-color: #303030;
+  --text-color-secondary: #555555;
+
+  --font-weight600: 600;
+  --font-weight700: 700;
+}
+
+/* downloaded fonts */
+
+@font-face {
+  font-family: OpenSans-Regular400;
+  src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-SemiBold600;
+  src: url(./fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bolt700;
+  src: url(./fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway-Bolt700;
+  src: url(./fonts/Raleway/static/Raleway-Bold.ttf);
+}
+/* ------------------------------------------------------- */
+
+body {
+  /* downloaded fonts, work if do not have access to the internet */
+  font-family: OpenSans-Regular400;
+  /* ********************** */
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bodycolor);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+
+.header {
+}
+.header-link {
+}
+.header-list {
+}
+.header-item {
+}
+.header-item- {
+}
+.header-tel {
+}
+.btn {
+}
+.btn-header {
+}
+
+/* hero */
+
+.hero {
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+}
+.hero-text-top {
+}
+.hero-title {
+}
+.hero-text-buttom {
+}
+
+/* about */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-text-top {
+}
+.about-title {
+}
+.about-text-two {
+}
+.about-text-bottom {
+}
+.btn-about {
+}
+
+/* prices */
+
+.prices {
+}
+.prices-text {
+}
+.prices-title {
+}
+.prices-list-left {
+}
+.prices-item-left {
+}
+.prices-text-left {
+}
+.prices-list-right {
+}
+.prices-item-right {
+}
+.prices-text-right {
+}
+.btn-prices {
+}
+
+/* oldschool */
+
+.oldschool {
+}
+.oldschool-list {
+}
+.oldschool-item {
+}
+.oldschool-span {
+}
+.oldschool-item-text {
+}
+.oldschool-text {
+}
+.oldschool-title {
+}
+.oldschool-text-buttom {
+}
+
+/* barbers */
+
+.barbers {
+}
+.barbers-text {
+}
+.barbers-title {
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-title-two {
+}
+.barbers-text-two {
+}
+.barbers-list-network {
+}
+.barbers-item-network {
+}
+.barbers-link {
+}
+
+/* photos */
+
+.photos {
+}
+.photos-text {
+}
+.photos-list {
+}
+.photos-item {
+}
+
+/* contacts */
+
+.left-contacts {
+}
+.left-contacts-title {
+}
+.btn-left-contacts {
+}
+.contacts {
+}
+
+/* address */
+
+.address {
+}
+.address-list {
+}
+.address-item {
+}
+.address-text {
+}
+
+/* ooter */
+
+.footer {
+}
+.footer-text {
+}
+.footer-list {
+}
+.footer-item {
+}
