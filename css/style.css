@@ -3,6 +3,7 @@
 :root {
   --body-color: #e5e5e5;
   --white-color: #ffffff;
+  --barbers-section: #f7f7f7;
   --hover-color: #ff6c00;
   --accent-color: #ff6c00;
   --second-color: #9da4bd;
@@ -50,9 +51,21 @@ ul {
   list-style: none;
 }
 
+/* button */
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* header */
 
 .header {
+  background-color: #555555;
 }
 .header-link {
 }
@@ -60,108 +73,255 @@ ul {
 }
 .header-item {
 }
-.header-item- {
-}
+.header-item-link,
 .header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--white-color);
 }
-.btn {
+.header-item-link:hover,
+.header-item-link:focus {
+  color: var(--hover-color);
+}
+.tel {
 }
 .btn-header {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* hero */
 
 .hero {
+  background-color: #9da4bd;
 }
 .hero-list {
+  transform: rotate(-90deg);
 }
 .hero-item {
 }
 .hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--text-color);
 }
 .hero-text-top {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
 }
 .hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
 }
 .hero-text-buttom {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
 }
 
 /* about */
 
 .about {
+  background-color: azure;
 }
 .about-list {
 }
 .about-item {
 }
 .about-text-top {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
 }
 .about-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
 }
 .about-text-two {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
 }
 .about-text-bottom {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
 }
 .btn-about {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  background-color: inherit;
 }
 
 /* prices */
 
 .prices {
+  background-color: wheat;
 }
 .prices-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--second-color);
 }
 .prices-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
 }
 .prices-list-left {
 }
 .prices-item-left {
 }
-.prices-text-left {
+.prices-text-left,
+.prices-text-right {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
 }
 .prices-list-right {
 }
 .prices-item-right {
 }
-.prices-text-right {
-}
 .btn-prices {
+  background-color: inherit;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+
+  color: var(--white-color);
 }
 
 /* oldschool */
 
 .oldschool {
+  background-color: rosybrown;
 }
 .oldschool-list {
 }
 .oldschool-item {
 }
 .oldschool-span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
 }
 .oldschool-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: var(--text-color);
 }
 .oldschool-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
 }
 .oldschool-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
 }
 .oldschool-text-buttom {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
 }
 
 /* barbers */
 
 .barbers {
+  background-color: var(--barbers-section);
 }
 .barbers-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
 }
 .barbers-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
 }
 .barbers-list {
 }
 .barbers-item {
 }
 .barbers-title-two {
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
 }
 .barbers-text-two {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
 }
 .barbers-list-network {
 }
@@ -173,8 +333,15 @@ ul {
 /* photos */
 
 .photos {
+  background-color: antiquewhite;
 }
 .photos-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
 }
 .photos-list {
 }
@@ -184,32 +351,87 @@ ul {
 /* contacts */
 
 .left-contacts {
+  background-color: wheat;
 }
 .left-contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
 }
 .btn-left-contacts {
+  background-color: inherit;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  color: var(--white-color);
 }
 .contacts {
+  background-color: gray;
 }
 
 /* address */
 
 .address {
 }
+.contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
 .address-list {
 }
 .address-item {
 }
+.address-link {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.location {
+  font-weight: 700;
+}
 .address-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
-/* ooter */
+/* footer */
 
 .footer {
+  background-color: aqua;
 }
 .footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--second-color);
 }
 .footer-list {
 }
 .footer-item {
+}
+.footer-item a {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--text-color);
 }
