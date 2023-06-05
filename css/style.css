@@ -406,6 +406,9 @@ ul {
 
   color: var(--second-color);
 }
+.underline-email{
+  text-decoration: underline;
+}
 .location {
   font-weight: 700;
 }
