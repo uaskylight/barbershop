@@ -1,0 +1,448 @@
+/* variables */
+
+:root {
+  --body-color: #e5e5e5;
+  --white-color: #ffffff;
+  --barbers-section: #f7f7f7;
+  --hover-color: #ff6c00;
+  --accent-color: #ff6c00;
+  --second-color: #9da4bd;
+  --text-color: #303030;
+  --title-color: #303030;
+  --text-color-secondary: #555555;
+
+  --font-weight600: 600;
+  --font-weight700: 700;
+}
+
+/* downloaded fonts */
+
+@font-face {
+  font-family: OpenSans-Regular400;
+  src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: OpenSans-SemiBold600;
+  src: url(./fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: OpenSans-Bolt700;
+  src: url(./fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: Raleway-Bolt700;
+  src: url(./fonts/Raleway/static/Raleway-Bold.ttf);
+}
+/* ------------------------------------------------------- */
+
+body {
+  /* downloaded fonts, work if do not have access to the internet */
+  font-family: OpenSans-Regular400;
+  /* ********************** */
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bodycolor);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+.link:hover,
+.link:focus{
+  color: var(--hover-color);
+}
+
+/* button */
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-header {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+.btn-header:hover,
+.btn-header:focus {
+  background-color: var(--white-color);
+  color: var(--text-color);
+}
+.buttom {
+  border: 1px solid #FF6C00;
+  background-color: inherit;
+  border-radius: 25px;
+}
+.buttom:hover,
+.buttom:focus {
+  border-radius: 25px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+/* header */
+
+.header {
+  background-color: #555555;
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+.header-item-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--white-color);
+}
+.tel {
+}
+
+/* hero */
+
+.hero {
+  background-color: #9da4bd;
+}
+.hero-list {
+  transform: rotate(-90deg);
+}
+.hero-item {
+}
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--text-color);
+}
+.hero-text-top {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.hero-text-buttom {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+
+/* about */
+
+.about {
+  background-color: azure;
+}
+.about-list {
+}
+.about-item {
+}
+.about-text-top {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
+}
+.about-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
+}
+.about-text-two {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
+}
+.about-text-bottom {
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
+}
+.btn-about {
+}
+
+/* prices */
+
+.prices {
+  background-color: wheat;
+}
+.prices-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--second-color);
+}
+.prices-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
+}
+.prices-list-left {
+}
+.prices-item-left {
+}
+.prices-text-left,
+.prices-text-right {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.prices-list-right {
+}
+.prices-item-right {
+}
+.btn-prices {
+}
+
+/* oldschool */
+
+.oldschool {
+  background-color: rosybrown;
+}
+.oldschool-list {
+}
+.oldschool-item {
+}
+.oldschool-span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
+}
+.oldschool-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: var(--text-color);
+}
+.oldschool-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
+}
+.oldschool-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
+}
+.oldschool-text-buttom {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-secondary);
+}
+
+/* barbers */
+
+.barbers {
+  background-color: var(--barbers-section);
+}
+.barbers-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
+}
+.barbers-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--text-color);
+}
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-title-two {
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+.barbers-text-two {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+.barbers-list-network {
+}
+.barbers-item-network {
+}
+.barbers-link {
+}
+
+/* photos */
+
+.photos {
+  background-color: antiquewhite;
+}
+.photos-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--text-color);
+}
+.photos-list {
+}
+.photos-item {
+}
+
+/* contacts */
+
+.left-contacts {
+  background-color: wheat;
+}
+.left-contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: var(--white-color);
+}
+.btn-left-contacts {
+  background-color: inherit;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  color: var(--white-color);
+}
+.contacts {
+  background-color: gray;
+}
+
+/* address */
+
+.address {
+}
+.contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+.address-list {
+}
+.address-item {
+}
+.address-link {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.underline-email{
+  text-decoration: underline;
+}
+.location {
+  font-weight: 700;
+}
+.address-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: aqua;
+}
+.footer-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--second-color);
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-item a {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--text-color);
+}
