@@ -35,6 +35,22 @@
 }
 /* ------------------------------------------------------- */
 
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   /* downloaded fonts, work if do not have access to the internet */
   font-family: OpenSans-Regular400;
@@ -316,6 +332,7 @@ ul {
 .barbers-item {
 }
 .barbers-title-two {
+  font-weight:400;
   font-size: 18px;
   line-height: 1.38;
   text-align: center;
