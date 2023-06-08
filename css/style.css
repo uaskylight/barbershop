@@ -31,6 +31,9 @@ ul,ol{
 button{
   cursor: pointer;
 }
+img{
+  display: block;
+}
 /* downloaded fonts */
 
 @font-face {
@@ -136,7 +139,7 @@ ul {
 .header {
   background-color: #555555;
   padding-top: 32px;
-  padding-bottom: ;
+  padding-bottom: 32px;
 }
 .header-logo {
 }
@@ -174,18 +177,28 @@ ul {
 
   color: var(--text-color);
 }
+.hero-content{
+  padding: 272px 100px;
+}
 .hero-text-top {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: rgba(157, 164, 189, 0.6);
+;
 }
 .hero-title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
+
+  margin-bottom: 32px;
 
   color: #ffffff;
 }
@@ -193,6 +206,8 @@ ul {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
+
+  max-width: 360px;
 
   color: var(--second-color);
 }
