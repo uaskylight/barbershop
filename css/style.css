@@ -97,6 +97,9 @@ ul {
 .link:focus {
   color: var(--hover-color);
 }
+.link:active{
+  color: #f18132;;
+}
 
 /* button */
 
@@ -115,13 +118,15 @@ ul {
   border-radius: 25px;
 }
 
-.btn-header {
-}
 .btn:hover,
 .btn:focus {
   border-radius: 25px;
   background-color: var(--accent-color);
   color: var(--white-color);
+}
+
+.btn:active{
+  background-color: #f18132;
 }
 .btn-footer{
   padding:12px 38px ;
