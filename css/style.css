@@ -21,17 +21,18 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   margin: 0;
 }
-ul,ol{
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
-button{
+button {
   cursor: pointer;
 }
-img{
+img {
   display: block;
 }
 /* downloaded fonts */
@@ -54,8 +55,6 @@ img{
 }
 /* ------------------------------------------------------- */
 
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -63,14 +62,14 @@ img{
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -95,7 +94,7 @@ ul {
   list-style: none;
 }
 .link:hover,
-.link:focus{
+.link:focus {
   color: var(--hover-color);
 }
 
@@ -108,32 +107,25 @@ ul {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-}
+  padding: 12px 20px;
 
-.btn-header {
   border: 1px solid #ff6c00;
-  border-radius: 25px;
-
-  background-color: var(--accent-color);
   color: var(--white-color);
-}
-.btn-header:hover,
-.btn-header:focus {
-  background-color: var(--white-color);
-  color: var(--text-color);
-}
-.buttom {
-  border: 1px solid #FF6C00;
   background-color: inherit;
   border-radius: 25px;
 }
-.buttom:hover,
-.buttom:focus {
+
+.btn-header {
+}
+.btn:hover,
+.btn:focus {
   border-radius: 25px;
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-
+.btn-footer{
+  padding:12px 38px ;
+}
 /* header */
 
 .header {
@@ -177,7 +169,7 @@ ul {
 
   color: var(--text-color);
 }
-.hero-content{
+.hero-content {
   padding: 272px 100px;
 }
 .hero-text-top {
@@ -189,7 +181,6 @@ ul {
   margin-bottom: 20px;
 
   color: rgba(157, 164, 189, 0.6);
-;
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
@@ -215,6 +206,8 @@ ul {
 /* about */
 
 .about {
+  padding: 120px 0px;
+
   background-color: azure;
 }
 .about-list {
@@ -227,6 +220,7 @@ ul {
   line-height: 1.36;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
   color: var(--text-color);
 }
 .about-title {
@@ -236,12 +230,15 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.05em;
 
+  margin-bottom: 20px;
+
   color: var(--text-color);
 }
 .about-text-two {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
+  margin-bottom: 20px;
 
   color: var(--text-color-secondary);
 }
@@ -249,6 +246,7 @@ ul {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
+  margin-bottom: 42px;
 
   color: var(--text-color-secondary);
 }
@@ -258,13 +256,16 @@ ul {
 /* prices */
 
 .prices {
+  padding: 120px 0;
+
   background-color: wheat;
 }
-.prices-text {
+.prices .text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: var(--second-color);
 }
@@ -274,36 +275,41 @@ ul {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  margin-bottom: 45px;
 
   color: var(--white-color);
 }
-.prices-list-left {
-}
-.prices-item-left {
-}
-.prices-text-left,
-.prices-text-right {
+.prices-text {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
 
   color: var(--second-color);
 }
-.prices-list-right {
-}
-.prices-item-right {
-}
 .btn-prices {
+  /* display: block; */
+  display: block;
+  margin: 0 auto;
+  margin-top: 45px;
 }
 
 /* oldschool */
 
 .oldschool {
+  padding: 120px 0;
+
   background-color: rosybrown;
+}
+.oldschool-container {
 }
 .oldschool-list {
 }
 .oldschool-item {
+  outline: 2px solid burlywood;
+  width: 170px;
+  text-align: center;
+
+  padding: 20px 24px;
 }
 .oldschool-span {
   font-weight: 700;
@@ -327,6 +333,7 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: var(--text-color);
 }
@@ -336,6 +343,7 @@ ul {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  margin-bottom: 20px;
 
   color: var(--text-color);
 }
@@ -350,6 +358,8 @@ ul {
 /* barbers */
 
 .barbers {
+  padding: 120px 0;
+
   background-color: var(--barbers-section);
 }
 .barbers-text {
@@ -357,6 +367,8 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 
   color: var(--text-color);
 }
@@ -367,18 +379,25 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.05em;
 
+  margin-bottom: 45px;
+
   color: var(--text-color);
 }
 .barbers-list {
 }
+.barbers-list div {
+  padding-top: 30px;
+}
 .barbers-item {
 }
 .barbers-title-two {
-  font-weight:400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.38;
   text-align: center;
   letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
 
   color: var(--text-color);
 }
@@ -388,6 +407,8 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
 
+  margin-bottom: 30px;
+
   color: var(--accent-color);
 }
 .barbers-list-network {
@@ -395,11 +416,18 @@ ul {
 .barbers-item-network {
 }
 .barbers-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ff6c00;
+  display: block;
 }
 
 /* photos */
 
 .photos {
+  padding: 120px 0;
+
   background-color: antiquewhite;
 }
 .photos-text {
@@ -407,6 +435,7 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-bottom: 45px;
 
   color: var(--text-color);
 }
@@ -416,6 +445,12 @@ ul {
 }
 
 /* contacts */
+
+.section-contacts {
+  padding: 120px 0;
+
+  background-color: #12309a;
+}
 
 .left-contacts {
   background-color: wheat;
@@ -436,9 +471,6 @@ ul {
 
   color: var(--white-color);
 }
-.contacts {
-  background-color: gray;
-}
 
 /* address */
 
@@ -451,11 +483,14 @@ ul {
   line-height: 1.16;
   letter-spacing: 0.05em;
 
+  margin-bottom: 40px;
+
   color: #ffffff;
 }
 .address-list {
 }
 .address-item {
+  margin-top: 20px;
 }
 .address-link {
   font-style: normal;
@@ -465,25 +500,37 @@ ul {
 
   color: var(--second-color);
 }
-.underline-email{
+.underline-email {
   text-decoration: underline;
 }
 .location {
   font-weight: 700;
 }
-.address-text {
+.address-text-work {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  margin-top: 70px;
 
   color: var(--white-color);
 }
+.address-text-time {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+
+  color: var(--second-color);
+}
 
 /* footer */
+footer {
+  background-color: aqua;
+}
 
 .footer {
-  background-color: aqua;
+  padding-top: 55px;
 }
 .footer-text {
   font-weight: 600;
