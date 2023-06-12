@@ -154,6 +154,10 @@ nav {
 }
 .header-logo {
 }
+.header-logo:hover,
+.header-logo:focus {
+  background-color: #626262;
+}
 .header-list {
   display: flex;
   align-items: center;
@@ -499,7 +503,7 @@ nav {
 .photos {
   padding: 120px 0;
 
-  background-color:var(--white-color);
+  background-color: var(--white-color);
 }
 .photos-text {
   font-weight: 600;
@@ -521,13 +525,12 @@ nav {
 /* contacts */
 
 .section-contacts {
-  
   padding: 120px 0;
 
-  background-color:#191C26;
+  background-color: #191c26;
 }
 
-.contacts-container{
+.contacts-container {
   display: flex;
   justify-content: space-between;
 }
@@ -557,7 +560,7 @@ nav {
 
 .address {
 }
-.right-contacts{
+.right-contacts {
   flex-grow: 1;
   max-width: 570px;
   background-color: tomato;
@@ -615,7 +618,7 @@ nav {
 footer {
   background-color: var(--barbers-section);
 }
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
