@@ -31,6 +31,8 @@ ol {
 }
 button {
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -97,8 +99,8 @@ ul {
 .link:focus {
   color: var(--hover-color);
 }
-.link:active{
-  color: #f18132;;
+.link:active {
+  color: #f18132;
 }
 
 /* button */
@@ -110,7 +112,9 @@ ul {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-  padding: 12px 20px;
+
+  min-width: 160px;
+  height: 40px;
 
   border: 1px solid #ff6c00;
   color: var(--white-color);
@@ -125,14 +129,24 @@ ul {
   color: var(--white-color);
 }
 
-.btn:active{
+.btn:active {
   background-color: #f18132;
 }
-.btn-footer{
-  padding:12px 38px ;
+.btn-primary {
+  color: var(--text-color);
+}
+.btn-footer {
+  padding: 12px 38px;
 }
 /* header */
-
+header .container {
+  display: flex;
+  align-items: center;
+}
+nav {
+  display: flex;
+  margin-right: auto;
+}
 .header {
   background-color: #555555;
   padding-top: 32px;
@@ -141,8 +155,17 @@ ul {
 .header-logo {
 }
 .header-list {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  gap: 30px;
 }
 .header-item {
+}
+.header-item-link.current {
+  color: var(--hover-color);
+}
+.header-item-link {
 }
 .header-item-link,
 .header-tel {
@@ -150,10 +173,11 @@ ul {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
   color: var(--white-color);
+  padding: 10px 10px;
 }
-.tel {
+.header-tel {
+  margin-right: 60px;
 }
 
 /* hero */
@@ -161,7 +185,11 @@ ul {
 .hero {
   background-color: #575f7c;
 }
+.hero-container {
+  display: flex;
+}
 .hero-list {
+  width: 100px;
   /* transform: rotate(-90deg); */
 }
 .hero-item {
@@ -175,7 +203,9 @@ ul {
   color: var(--text-color);
 }
 .hero-content {
-  padding: 272px 100px;
+  flex-grow: 1;
+  padding: 272px 100px 208px 100px;
+  background-color: yellow;
 }
 .hero-text-top {
   font-weight: 600;
@@ -202,7 +232,6 @@ ul {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-
   max-width: 360px;
 
   color: var(--second-color);
@@ -212,10 +241,15 @@ ul {
 
 .about {
   padding: 120px 0px;
-
-  background-color: azure;
+  background-color: var(--white-color);
+}
+.about-container {
+  display: flex;
+  gap: 30px;
 }
 .about-list {
+  display: flex;
+  gap: 30px;
 }
 .about-item {
 }
@@ -263,7 +297,7 @@ ul {
 .prices {
   padding: 120px 0;
 
-  background-color: wheat;
+  background-color: black;
 }
 .prices .text {
   font-weight: 600;
@@ -273,6 +307,21 @@ ul {
   margin-bottom: 20px;
 
   color: var(--second-color);
+}
+.prices-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.prices-list {
+  width: calc((100% - 30px) / 2);
+}
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .prices-title {
   font-family: "Raleway";
@@ -295,7 +344,6 @@ ul {
   /* display: block; */
   display: block;
   margin: 0 auto;
-  margin-top: 45px;
 }
 
 /* oldschool */
@@ -303,11 +351,23 @@ ul {
 .oldschool {
   padding: 120px 0;
 
-  background-color: rosybrown;
+  background-color: var(--white-color);
 }
 .oldschool-container {
+  display: flex;
+  gap: 130px;
+  justify-content: space-between;
 }
 .oldschool-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: #fff;
+}
+.oldschool-block {
+  max-width: 780px;
+  background-color: green;
 }
 .oldschool-item {
   outline: 2px solid burlywood;
@@ -389,11 +449,14 @@ ul {
   color: var(--text-color);
 }
 .barbers-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
 .barbers-list div {
-  padding-top: 30px;
+  margin-top: 30px;
 }
-.barbers-item {
+.barbers-item div {
 }
 .barbers-title-two {
   font-weight: 400;
@@ -417,6 +480,9 @@ ul {
   color: var(--accent-color);
 }
 .barbers-list-network {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 .barbers-item-network {
 }
@@ -433,7 +499,7 @@ ul {
 .photos {
   padding: 120px 0;
 
-  background-color: antiquewhite;
+  background-color:var(--white-color);
 }
 .photos-text {
   font-weight: 600;
@@ -445,6 +511,9 @@ ul {
   color: var(--text-color);
 }
 .photos-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
 }
 .photos-item {
 }
@@ -452,13 +521,20 @@ ul {
 /* contacts */
 
 .section-contacts {
+  
   padding: 120px 0;
 
-  background-color: #12309a;
+  background-color:#191C26;
+}
+
+.contacts-container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .left-contacts {
-  background-color: wheat;
+  max-width: 570px;
+  flex-grow: 1;
 }
 .left-contacts-title {
   font-family: "Raleway";
@@ -480,6 +556,12 @@ ul {
 /* address */
 
 .address {
+}
+.right-contacts{
+  flex-grow: 1;
+  max-width: 570px;
+  background-color: tomato;
+  padding-left: 100px;
 }
 .contacts-title {
   font-family: "Raleway";
@@ -531,11 +613,14 @@ ul {
 
 /* footer */
 footer {
-  background-color: aqua;
+  background-color: var(--barbers-section);
 }
-
-.footer {
-  padding-top: 55px;
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-items: center;
+  padding: 55px 15px;
 }
 .footer-text {
   font-weight: 600;
@@ -546,8 +631,13 @@ footer {
   color: var(--second-color);
 }
 .footer-list {
+  display: flex;
+  gap: 40px;
 }
 .footer-item {
+}
+.footer-item .link {
+  padding: 8px 4px;
 }
 .footer-item a {
   font-weight: 600;
