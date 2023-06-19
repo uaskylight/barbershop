@@ -76,8 +76,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid yellow;
 }
 
 body {
@@ -225,6 +223,9 @@ nav {
   background-size: cover;
 }
 .hero-text-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -234,7 +235,16 @@ nav {
 
   color: rgba(157, 164, 189, 0.6);
 }
+.hero-text-top::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
 .hero-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -244,6 +254,11 @@ nav {
   margin-bottom: 32px;
 
   color: #ffffff;
+}
+.hero-title::before {
+  content: "\1F525";
+  font-size: 50px;
+  background-size: contain;
 }
 .hero-text-buttom {
   font-size: 18px;
@@ -271,6 +286,9 @@ nav {
 .about-item {
 }
 .about-text-top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -278,6 +296,12 @@ nav {
 
   margin-bottom: 20px;
   color: var(--text-color);
+}
+.about-text-top::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 .about-title {
   font-family: "Raleway";
@@ -323,6 +347,9 @@ nav {
 .prices-container {
 }
 .prices .text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -330,6 +357,12 @@ nav {
   margin-bottom: 20px;
 
   color: var(--second-color);
+}
+.prices .text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 .prices-block {
   display: flex;
@@ -339,9 +372,33 @@ nav {
 .prices-list {
   width: calc((100% - 30px) / 2);
 }
+.prices-list-gradientleft {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+.prices-list-gradientright {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
 .prices-item {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
+}
+.prices-item::before {
+  content: "";
+  flex-grow: 1;
+  order: 1;
+  width: 100px;
+  height: 1px;
+  margin: 0 12px;
+  background: rgba(157, 164, 189, 0.12);
 }
 .prices-item:not(:last-child) {
   margin-bottom: 20px;
@@ -363,6 +420,9 @@ nav {
 
   color: var(--second-color);
 }
+.prices-text:last-child {
+  order: 1;
+}
 .btn-prices {
   /* display: block; */
   display: block;
@@ -378,27 +438,33 @@ nav {
 }
 .oldschool-container {
   display: flex;
+  padding-left: 100px;
   gap: 130px;
-  justify-content: space-between;
 }
 .oldschool-list {
   display: flex;
+  width: 370px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
   background-color: #fff;
 }
 .oldschool-block {
-  max-width: 780px;
-  background-color: green;
+  max-width: 500px;
 }
 .oldschool-item {
-  outline: 2px solid burlywood;
   width: 170px;
+  height: 133px;
   text-align: center;
-
   padding: 20px 24px;
+  background: #f7f7f7;
 }
+.oldschool-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.oldschool-item:nth-child(even) {
+  margin-top: 30px;
+}
+
 .oldschool-span {
   font-weight: 700;
   font-size: 42px;
@@ -417,6 +483,9 @@ nav {
   color: var(--text-color);
 }
 .oldschool-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -425,10 +494,17 @@ nav {
 
   color: var(--text-color);
 }
+.oldschool-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
 .oldschool-title {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
+  max-width: 430px;
   line-height: 1.16;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
@@ -451,6 +527,9 @@ nav {
   background-color: var(--barbers-section);
 }
 .barbers-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -459,6 +538,12 @@ nav {
   margin-bottom: 20px;
 
   color: var(--text-color);
+}
+.barbers-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 .barbers-title {
   font-family: "Raleway";
@@ -536,6 +621,9 @@ nav {
   background-color: var(--white-color);
 }
 .photos-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -543,6 +631,12 @@ nav {
   margin-bottom: 45px;
 
   color: var(--text-color);
+}
+.photos-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 .photos-list {
   display: flex;
@@ -628,6 +722,9 @@ nav {
   font-weight: 700;
 }
 .address-text-work {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -635,6 +732,12 @@ nav {
   margin-top: 70px;
 
   color: var(--white-color);
+}
+.address-text-work::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
 }
 .address-text-time {
   font-size: 18px;
