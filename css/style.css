@@ -100,7 +100,9 @@ ul {
 .link:active {
   color: #f18132;
 }
-
+.link:hover {
+  transition: color 250ms linear;
+}
 /* button */
 
 .btn {
@@ -126,7 +128,9 @@ ul {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
-
+.btn:hover {
+  transition: color 250ms linear, background-color 250ms linear;
+}
 .btn:active {
   background-color: #f18132;
 }
@@ -154,11 +158,14 @@ nav {
   cursor: pointer;
 }
 .header-icon {
-  fill: var(--title-color);
+  fill: var(--white-color);
 }
 .header-icon:hover,
 .header-icon:focus {
   fill: var(--hover-color);
+}
+.header-icon:hover {
+  transition: fill 250ms linear;
 }
 .header-list {
   display: flex;
@@ -194,9 +201,26 @@ nav {
 .hero-container {
   display: flex;
 }
-.hero-list {
+.hero-network {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 27px;
+  padding-bottom: 40px;
   width: 100px;
-  /* transform: rotate(-90deg); */
+}
+.hero-list {
+  transform-origin: bottom left;
+  transform: rotate(-90deg) translateY(100%);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color:var(--text-color);
 }
 .hero-item {
 }
@@ -562,9 +586,33 @@ nav {
   justify-content: space-between;
 }
 .barbers-list div {
-  margin-top: 30px;
 }
-.barbers-item div {
+.barbers-item {
+
+}
+.barbers-block-overlame{
+   position: relative;
+    margin-bottom: 30px;
+     overflow: hidden;
+}
+.barber-text-overlame{
+  position: absolute;
+  width: 100%;
+  top:0;
+  height:0;
+  height: 100%;
+   font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color:#ffffff;
+  padding: 10px;
+  background-color:#ff6a00ad;
+  transform: translateY(100%);
+  transition:transform 250ms linear;
+  overflow: scroll;
+}
+.barbers-item:hover .barber-text-overlame{
+  transform: translateY(0%);
 }
 .barbers-title-two {
   font-weight: 400;
@@ -603,6 +651,7 @@ nav {
   justify-content: center;
   align-items: center;
   fill: var(--title-color);
+  transition: fill 250ms linear,background-color 250ms linear;
 }
 .barbers-icon {
   fill: inherit;
@@ -783,4 +832,46 @@ footer {
   letter-spacing: 0.2em;
 
   color: var(--text-color);
+}
+
+/* modal */
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #9da4bd78;
+}
+.modal{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+
+  transform: translate(-50%, -50%);
+}
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-btn{
+  position: absolute;
+  top:10px;
+  right:10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--hover-color);
+  color: var(--text-color-secondary);
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  transform: scale(1);
+}
+.modal-btn:hover{
+  transform: scale(1.1);
 }

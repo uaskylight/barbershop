@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -28,12 +28,10 @@
         <nav>
           <a class="header-logo" href="#">
             <svg class="header-icon" width="69" height="55">
-                        <use
-                          href="./images/symbol-defs.svg#icon-Logo"
-                        ></use>
-                      </svg>
+              <use href="./images/symbol-defs.svg#icon-Logo"></use>
+            </svg>
           </a>
-          <ul class="header-list">
+          <ul class="header-list" data-aos="zoom-in">
             <li class="header-item">
               <a class="header-item-link link current" href="#">About</a>
             </li>
@@ -51,7 +49,7 @@
         <a class="header-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="btn btn-header" type="button">Online-booking</button>
+        <button class="btn btn-header" data-open-modal type="button">Online-booking</button>
       </div>
     </header>
     <!-- MAIN -->
@@ -59,29 +57,31 @@
       <!-- SECTION HERO -->
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list">
-            <li class="hero-item">
-              <a
-                class="hero-link link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                class="hero-link link"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-network">
+            <ul class="hero-list">
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-text-top">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title" data-aos="flip-left">BarberShop</h1>
             <p class="hero-text-buttom">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
@@ -110,7 +110,9 @@
           </ul>
           <div>
             <p class="about-text-top">About</p>
-            <h2 class="about-title">Best Barbershop in your city</h2>
+            <h2 class="about-title" data-aos="fade-right">
+              Best Barbershop in your city
+            </h2>
             <p class="about-text-two">
               If you want to add more confidence to your image, you should
               definitely visit us.
@@ -132,7 +134,9 @@
       <section class="prices">
         <div class="container prices-container">
           <p class="text">Spend your time with the best masters</p>
-          <h2 class="prices-title">Services and prices</h2>
+          <h2 class="prices-title" data-aos="fade-right">
+            Services and prices
+          </h2>
           <div class="prices-block">
             <ul class="prices-list prices-list-gradientleft">
               <li class="prices-item">
@@ -171,13 +175,18 @@
               </li>
             </ul>
           </div>
-          <button class="btn btn-prices" type="button">online-booking</button>
+          <button class="btn btn-prices"data-open-modal type="button">online-booking</button>
         </div>
       </section>
       <!-- SECTION OLD TRADITIONAL SCHOOL -->
       <section class="oldschool">
         <div class="container oldschool-container">
-          <ul class="oldschool-list">
+          <ul
+            class="oldschool-list"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <li class="oldschool-item">
               <span class="oldschool-span">600</span>
               <p class="oldschool-item-text">Satisfied customers per day</p>
@@ -209,14 +218,53 @@
       <section class="barbers">
         <div class="container">
           <p class="barbers-text">For true enjoyers of the atmosphere</p>
-          <h2 class="barbers-title">Our barbers</h2>
+          <h2 class="barbers-title" data-aos="fade-right">Our barbers</h2>
           <ul class="barbers-list">
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-1.jpeg"
-                alt="photo John Smith"
-                width="370"
-              />
+              <div class="barbers-block-overlame">
+                <img
+                  src="./images/barbers-img-1.jpeg"
+                  alt="photo John Smith"
+                  width="370"
+                />
+                <p class="barber-text-overlame">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                  voluptate quas sint molestiae vero. Ea itaque provident
+                  quidem! Ut quaerat quo neque facere fugit necessitatibus
+                  consectetur, corrupti voluptas reprehenderit sed ab similique
+                  officia distinctio ipsam alias est. Similique, totam
+                  architecto! Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Illum sapiente possimus iure nobis quo nam quaerat vel,
+                  minus eligendi nesciunt repudiandae doloribus repellat magnam
+                  voluptatem tempora! Repellendus est fugiat cumque?200 Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Facilis,
+                  placeat fuga non laudantium ratione id molestias nulla eius
+                  aliquam voluptatum nihil explicabo asperiores eaque accusamus
+                  maxime, eligendi quod tenetur perspiciatis distinctio adipisci
+                  eveniet neque veniam. Accusamus, placeat nam itaque fugit sed
+                  explicabo natus unde quod. Et laborum repudiandae vitae! Autem
+                  atque laborum dolores incidunt. Distinctio eligendi ea quam
+                  dolorem sapiente nihil, rem sit dolor similique! Beatae,
+                  consequatur laborum officiis incidunt tempora, illo, totam ad
+                  ipsum obcaecati velit recusandae nesciunt temporibus vel rem
+                  quis autem atque blanditiis numquam minus eum ea inventore!
+                  Sapiente facilis unde mollitia quas recusandae similique totam
+                  sit debitis exercitationem ratione in, voluptates distinctio
+                  sunt labore perferendis accusamus numquam eius. Recusandae
+                  earum molestias dignissimos labore fugit eveniet ipsa
+                  architecto aperiam nulla fuga libero qui debitis doloremque
+                  modi, quaerat consectetur dolorum natus sed maxime! Est sunt
+                  quibusdam earum, nostrum quis eveniet vel numquam quisquam
+                  hic, facilis voluptates, maxime rerum veritatis. Minima
+                  exercitationem quae ratione eum. In, veritatis. Tenetur
+                  aliquid reprehenderit distinctio mollitia aliquam perspiciatis
+                  fugiat, corporis doloribus saepe cupiditate quod repudiandae
+                  magni voluptate quidem eius maxime ratione eaque repellat
+                  consequuntur laborum vero suscipit, sint reiciendis quis.
+                  Quos, tempora ipsa debitis dignissimos distinctio adipisci
+                  nobis natus aliquid minima dolores beatae!
+                </p>
+              </div>
               <div>
                 <h3 class="barbers-title-two">John Smith</h3>
                 <p class="barbers-text-two">Extreme Barber</p>
@@ -259,11 +307,21 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-2.jpeg"
-                alt="photo Michele Doe"
-                width="370"
-              />
+              <div class="barbers-block-overlame">
+                <img
+                  src="./images/barbers-img-2.jpeg"
+                  alt="photo Michele Doe"
+                  width="370"
+                />
+                <p class="barber-text-overlame">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                  voluptate quas sint molestiae vero. Ea itaque provident
+                  quidem! Ut quaerat quo neque facere fugit necessitatibus
+                  consectetur, corrupti voluptas reprehenderit sed ab similique
+                  officia distinctio ipsam alias est. Similique, totam
+                  architecto!
+                </p>
+              </div>
               <div>
                 <h3 class="barbers-title-two">Michele Doe</h3>
                 <p class="barbers-text-two">Extreme Barber</p>
@@ -306,11 +364,21 @@
               </div>
             </li>
             <li class="barbers-item">
-              <img
-                src="./images/barbers-img-3.jpeg"
-                alt="photo Alan Black"
-                width="370"
-              />
+              <div class="barbers-block-overlame">
+                <img
+                  src="./images/barbers-img-3.jpeg"
+                  alt="photo Alan Black"
+                  width="370"
+                />
+                <p class="barber-text-overlame">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+                  voluptate quas sint molestiae vero. Ea itaque provident
+                  quidem! Ut quaerat quo neque facere fugit necessitatibus
+                  consectetur, corrupti voluptas reprehenderit sed ab similique
+                  officia distinctio ipsam alias est. Similique, totam
+                  architecto!
+                </p>
+              </div>
               <div>
                 <h3 class="barbers-title-two">Alan Black</h3>
                 <p class="barbers-text-two">Extreme Barber</p>
@@ -327,9 +395,7 @@
                   <li class="barbers-item-network">
                     <a class="barbers-link link" href="">
                       <svg class="barbers-icon" width="20" height="20">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter"
-                        ></use>
+                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -399,11 +465,13 @@
       <section class="section-contacts">
         <div class="container contacts-container">
           <div class="left-contacts">
-            <h2 class="left-contacts-title">Online-booking</h2>
-            <button class="btn btn-footer" type="button">send</button>
+            <h2 class="left-contacts-title" data-aos="fade-right">
+              Online-booking
+            </h2>
+            <button class="btn btn-footer"data-open-modal type="button">send</button>
           </div>
           <div class="right-contacts">
-            <h2 class="contacts-title">Contacts</h2>
+            <h2 class="contacts-title" data-aos="fade-right">Contacts</h2>
             <address class="address">
               <ul class="address-list">
                 <li class="address-item">
@@ -463,5 +531,36 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" class="modal-btn"data-close-modal >X</button>
+      </div>
+    </div>
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        refs.backdrop.addEventListener("click", logBackdropClick);
+
+        function toggleModal() {
+          document.body.classList.toggle("modal-open");
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+        //  function toggleModal() {
+        //    refs.backdrop.classList.toggle("is-hidden");
+        //  }
+      })();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
