@@ -93,6 +93,9 @@ a {
 ul {
   list-style: none;
 }
+.link{
+  transition: color 250ms linear;
+}
 .link:hover,
 .link:focus {
   color: var(--hover-color);
@@ -101,7 +104,7 @@ ul {
   color: #f18132;
 }
 .link:hover {
-  transition: color 250ms linear;
+  
 }
 /* button */
 
@@ -120,6 +123,7 @@ ul {
   color: var(--white-color);
   background-color: inherit;
   border-radius: 25px;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .btn:hover,
@@ -129,7 +133,7 @@ ul {
   color: var(--white-color);
 }
 .btn:hover {
-  transition: color 250ms linear, background-color 250ms linear;
+  
 }
 .btn:active {
   background-color: #f18132;
@@ -145,12 +149,15 @@ header .container {
   display: flex;
   align-items: center;
 }
+header{
+  position: absolute;
+  width: 100%;
+}
 nav {
   display: flex;
   margin-right: auto;
 }
 .header {
-  background-color: #555555;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -158,14 +165,15 @@ nav {
   cursor: pointer;
 }
 .header-icon {
-  fill: var(--white-color);
+  fill: var(--title-color);
+  transition: fill 250ms linear;
 }
 .header-icon:hover,
 .header-icon:focus {
   fill: var(--hover-color);
 }
 .header-icon:hover {
-  transition: fill 250ms linear;
+  
 }
 .header-list {
   display: flex;
