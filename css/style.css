@@ -93,7 +93,7 @@ a {
 ul {
   list-style: none;
 }
-.link{
+.link {
   transition: color 250ms linear;
 }
 .link:hover,
@@ -104,7 +104,6 @@ ul {
   color: #f18132;
 }
 .link:hover {
-  
 }
 /* button */
 
@@ -133,7 +132,6 @@ ul {
   color: var(--white-color);
 }
 .btn:hover {
-  
 }
 .btn:active {
   background-color: #f18132;
@@ -149,7 +147,7 @@ header .container {
   display: flex;
   align-items: center;
 }
-header{
+header {
   position: absolute;
   width: 100%;
 }
@@ -173,7 +171,6 @@ nav {
   fill: var(--hover-color);
 }
 .header-icon:hover {
-  
 }
 .header-list {
   display: flex;
@@ -456,7 +453,6 @@ nav {
   order: 1;
 }
 .btn-prices {
-  
   /* display: block; */
   display: block;
   margin: 0 auto;
@@ -858,7 +854,6 @@ footer {
   top: 50%;
   left: 50%;
   width: 600px;
-  min-height: 600px;
   background-color: #fff;
 
   transform: translate(-50%, -50%) scaleY(1);
@@ -887,4 +882,55 @@ footer {
 }
 .modal-btn:hover {
   transform: scale(1.1);
+}
+
+form {
+  padding: 50px 10px;
+  border: 1px solid var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.label-frame {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 14px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+
+  color: var(--second-color);
+}
+.modal-recording-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-input {
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 4px;
+}
+.modal-input::placeholder,
+textarea::placeholder {
+  font-size: 10px;
+}
+
+.modal-input:focus,
+textarea:focus {
+  outline: 1px solid var(--hover-color);
+}
+.btn-form {
+  color: var(--text-color);
+}
+textarea {
+  width: 100%;
+  border: 1px solid var(--second-color);
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
 }

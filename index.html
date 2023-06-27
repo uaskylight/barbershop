@@ -49,7 +49,9 @@
         <a class="header-tel link" href="tel:+380441111111"
           >+38 044 111 11 11</a
         >
-        <button class="btn btn-header" data-open-modal type="button">Online-booking</button>
+        <button class="btn btn-header" data-open-modal type="button">
+          Online-booking
+        </button>
       </div>
     </header>
     <!-- MAIN -->
@@ -175,7 +177,9 @@
               </li>
             </ul>
           </div>
-          <button class="btn btn-prices"data-open-modal type="button">online-booking</button>
+          <button class="btn btn-prices" data-open-modal type="button">
+            online-booking
+          </button>
         </div>
       </section>
       <!-- SECTION OLD TRADITIONAL SCHOOL -->
@@ -468,7 +472,9 @@
             <h2 class="left-contacts-title" data-aos="fade-right">
               Online-booking
             </h2>
-            <button class="btn btn-footer"data-open-modal type="button">send</button>
+            <button class="btn btn-footer" data-open-modal type="button">
+              send
+            </button>
           </div>
           <div class="right-contacts">
             <h2 class="contacts-title" data-aos="fade-right">Contacts</h2>
@@ -531,9 +537,51 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop" data-backdrop>
       <div class="modal">
-        <button type="button" class="modal-btn"data-close-modal >X</button>
+        <button type="button" class="modal-btn" data-close-modal>X</button>
+        <form>
+          <p class="modal-recording-text">Make an appointment for a haircut</p>
+          <div class="label-frame">
+            <label>
+              Name
+              <input
+                class="modal-input"
+                type="text"
+                name="user-name"
+                autofocus
+                placeholder="Ivan Ivanov"
+              />
+            </label>
+          </div>
+          <div class="label-frame">
+            <label>
+              Phone
+              <input
+                class="modal-input"
+                type="text"
+                name="user-tel"
+                placeholder="+38(...)"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+          <div class="label-frame">
+            <label>
+              Email
+              <input
+                class="modal-input"
+                type="text"
+                name="user-mail"
+                placeholder="my@gmail.com"
+              />
+            </label>
+          </div>
+          <label>
+            <textarea name="commit" placeholder="Commit..." rows="10"></textarea>
+          </label>
+          <button type="submit" class="btn btn-form">Send</button>
+        </form>
       </div>
     </div>
     <script>
