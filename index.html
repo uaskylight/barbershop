@@ -527,7 +527,7 @@
           </li>
           <li class="footer-item">
             <a
-              class="link"
+              class="link z"
               href="#"
               target="_blank"
               rel="noopener noreferrer nofollow"
@@ -551,6 +551,7 @@
                 name="user-name"
                 autofocus
                 placeholder="Ivan Ivanov"
+                required
               />
             </label>
           </div>
@@ -559,10 +560,10 @@
               Phone
               <input
                 class="modal-input"
-                type="text"
+                type="tel"
                 name="user-tel"
                 placeholder="+38(...)"
-                autocomplete="off"
+                required
               />
             </label>
           </div>
@@ -571,15 +572,22 @@
               Email
               <input
                 class="modal-input"
-                type="text"
+                type="email"
                 name="user-mail"
                 placeholder="my@gmail.com"
+                required
               />
             </label>
           </div>
-          <label>
-            <textarea name="commit" placeholder="Commit..." rows="10"></textarea>
-          </label>
+          <div class="label-frame">
+            <label>
+              <textarea
+                name="commit"
+                placeholder="Commit..."
+                rows="10"
+              ></textarea>
+            </label>
+          </div>
           <button type="submit" class="btn btn-form">Send</button>
         </form>
       </div>
