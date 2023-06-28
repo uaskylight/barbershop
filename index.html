@@ -539,91 +539,93 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop" data-backdrop>
       <div class="modal">
         <button type="button" class="modal-btn" data-close-modal>X</button>
+        <p class="modal-text">Make an appointment for a haircut</p>
+
         <form>
-          <p class="modal-recording-text">Make an appointment for a haircut</p>
-          <div class="label-frame">
-            <label class="modal-label">
+          <div class="form-frame">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              autofocus
+              placeholder=" "
+              required
+            />
+            <label class="form-label">
               Name
-              <span>
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="user-name"
-                  autofocus
-                  placeholder="Ivan Ivanov"
-                  required
-                />
-                <svg class="modal-icon" width="18" height="18">
+              <!-- <span>
+                <svg width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-user"></use>
                 </svg>
-              </span>
+              </span> -->
             </label>
           </div>
-          <div class="label-frame">
-            <label class="modal-label">
+          <div class="form-frame">
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              placeholder=" "
+              required
+            />
+            <label class="form-label">
               Phone
-              <span>
-                <input
-                  class="modal-input"
-                  type="tel"
-                  name="user-tel"
-                  placeholder="+38(...)"
-                  required
-                />
-                <svg class="modal-icon" width="18" height="18">
+              <!-- <span>
+                <svg width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
                 </svg>
-              </span>
+              </span> -->
             </label>
           </div>
-          <div class="label-frame">
-            <label class="modal-label">
+          <div class="form-frame">
+            <input
+              class="form-input"
+              type="email"
+              name="user-mail"
+              placeholder=" "
+              required
+            />
+            <label class="form-label">
               Email
-              <span>
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="user-mail"
-                  placeholder="my@gmail.com"
-                  required
-                />
+              <!-- <span>
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
-              </span>
+              </span> -->
             </label>
           </div>
-          <div class="label-frame textarea-frame">
+          <div class="form-texarea ">
             <textarea
+              class="form-input"
               name="commit"
               placeholder="Commit..."
               rows="10"
             ></textarea>
           </div>
-          <div class="checkbox">
+          <div class="form-frame">
             <input
-              class="policy-icon visually-hidden"
+              class="form-accept visually-hidden"
               type="checkbox"
               name="policy"
               id="vector"
             />
             <label for="vector" id="policy" class="check-text">
               <span>
-                <svg class="check-icon" weight="14" height="12">
+                <svg class="check-icon" >
                   <use href="./images/symbol-defs.svg#icon-vector"></use>
                 </svg>
               </span>
               I accept the terms
+
               <a href="#" class="police-link">policy</a>
             </label>
           </div>
-                  <button type="submit" class="btn btn-form">Send</button>
+
+          <button type="submit" class="btn btn-form">Send</button>
         </form>
-
-
       </div>
     </div>
     <script>
