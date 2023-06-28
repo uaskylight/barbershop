@@ -926,7 +926,6 @@ margin-bottom: 10px;
   border-radius: 5px;
   padding: 5px 10px 5px 30px;
   outline: 0;
-
   color: #51535a;
 }
 .modal-input::placeholder,
@@ -936,7 +935,6 @@ textarea::placeholder {
 .modal-label span {
   margin-top: 4px;
 }
-
 .modal-input:focus,
 textarea:focus {
   border: 1px solid var(--hover-color);
