@@ -141,6 +141,7 @@ ul {
 }
 .btn-footer {
   padding: 12px 38px;
+  margin-top: 44px;
 }
 /* header */
 header .container {
@@ -725,9 +726,72 @@ nav {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-
   color: var(--white-color);
+  margin-bottom: 44px;
 }
+
+
+.form-booking {
+ 
+  display: flex;
+  margin-bottom: 44px;
+
+
+}
+.form-booking-label{
+  display: inline-block;
+  color: rgba(157, 164, 189, 0.40);
+font-size: 11px;
+font-family: Open Sans;
+font-weight: 600;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+}
+.form-booking-label:not(:last-child){
+  margin-right: 30px;
+}
+.form-booking-label input{
+width: 270px;
+padding: 10px;
+background-color: transparent;
+border:0;
+border-bottom:1px solid #ffffff;
+color: #ffffff;
+outline: none;
+}
+.form-booking-label:focus-within,
+.form-commit-label:focus-within{
+  color: #ffffff;
+}
+.form-commit-label{
+  color: rgba(157, 164, 189, 0.40);
+font-size: 11px;
+font-family: Open Sans;
+font-weight: 600;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+}
+.form-commit-label textarea{
+width: 100%;
+min-height: 76px;
+background-color:transparent;
+border:0;
+padding: 10px;
+border-bottom:1px solid #ffffff;
+color: #ffffff;
+font-size: 11px;
+font-family: Open Sans;
+font-weight: 600;
+letter-spacing: 1.1px;
+text-transform: uppercase;
+outline: none;
+}
+.form-commit {
+}
+
+
+
+
 .btn-left-contacts {
   background-color: inherit;
   border: 1px solid #ff6c00;

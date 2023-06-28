@@ -474,6 +474,24 @@
             <h2 class="left-contacts-title" data-aos="fade-right">
               Online-booking
             </h2>
+            <form>
+              <div class="form-booking">
+                <label class="form-booking-label">
+                  Name*
+                  <input type="text" name="name" />
+                </label>
+                <label class="form-booking-label">
+                  Phone*
+                  <input type="tel" name="tel" />
+                </label>
+              </div>
+              <div class="form-commit">
+                <label class="form-commit-label">
+                  Commit*
+                  <textarea  name="commit"></textarea>
+                </label>
+              </div>
+            </form>
             <button class="btn btn-footer" data-open-modal type="button">
               send
             </button>
@@ -539,7 +557,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-backdrop>
+    <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button type="button" class="modal-btn" data-close-modal>X</button>
         <p class="modal-text">Make an appointment for a haircut</p>
@@ -597,7 +615,7 @@
               </span> -->
             </label>
           </div>
-          <div class="form-texarea ">
+          <div class="form-texarea">
             <textarea
               class="form-input"
               name="commit"
@@ -614,7 +632,7 @@
             />
             <label for="vector" id="policy" class="check-text">
               <span>
-                <svg class="check-icon" >
+                <svg class="check-icon">
                   <use href="./images/symbol-defs.svg#icon-vector"></use>
                 </svg>
               </span>
