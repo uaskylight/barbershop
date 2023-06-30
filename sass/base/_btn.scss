@@ -24,28 +24,23 @@
     &:active {
         background-color: #f18132;
     }
-}
 
+    &__header {
+        margin-right: 20px;
+    }
 
-.btn.btn-primary {
-    color: var(--text-color-secondary);
-}
+    &__about {
+        color: var(--text-color-secondary);
+    }
 
-.btn-prices {
-    /* display: block; */
-    display: block;
-    margin: 0 auto;
-}
+    &__prices {
+        /* display: block; */
+        display: block;
+        margin: 0 auto;
+    }
 
-.btn-left-contacts {
-    background-color: inherit;
-    border: 1px solid #ff6c00;
-    border-radius: 25px;
-
-    color: var(--white-color);
-}
-
-.btn-footer {
-    padding: 12px 38px;
-    margin-top: 44px;
+    &__footer {
+        padding: 12px 38px;
+        margin-top: 44px;
+    }
 }
