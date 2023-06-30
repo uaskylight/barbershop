@@ -287,8 +287,9 @@ ul {
 }
 .abouttexttop {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
