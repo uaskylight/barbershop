@@ -1,0 +1,50 @@
+footer {
+    background-color: var(--barbers-section);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-items: center;
+    padding: 55px 15px;
+}
+
+.footer-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--second-color);
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer-list::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #555555;
+}
+
+.footer-item {
+    display: flex;
+}
+
+.footer-item .link {
+    padding: 8px 4px;
+}
+
+.footer-item a {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+
+    color: var(--text-color);
+}

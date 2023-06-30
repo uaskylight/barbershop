@@ -1,0 +1,94 @@
+.prices {
+    background-color: #111319;
+    background-image: url(../images/img.png), linear-gradient(#111319, #111319);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 120px 0;
+
+    & .text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        color: var(--second-color);
+
+        &::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+
+    &-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    &-list {
+        width: calc((100% - 30px) / 2);
+
+        &-gradientleft {
+            background-image: linear-gradient(180deg,
+                    #171a24 0%,
+                    rgba(23, 26, 36, 0.2) 100%);
+        }
+
+        &-gradientright {
+            background-image: linear-gradient(180deg,
+                    #171a24 0%,
+                    rgba(23, 26, 36, 0.2) 100%);
+        }
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &::before {
+            content: "";
+            flex-grow: 1;
+            order: 1;
+            width: 100px;
+            height: 1px;
+            margin: 0 12px;
+            background: rgba(157, 164, 189, 0.12);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-title {
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 1.16;
+        letter-spacing: 0.05em;
+        margin-bottom: 45px;
+
+        color: var(--white-color);
+    }
+
+    &-text {
+        font-size: 18px;
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+
+        color: var(--second-color);
+
+        &:last-child {
+            order: 1;
+        }
+    }
+}

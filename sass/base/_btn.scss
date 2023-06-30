@@ -1,0 +1,51 @@
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: 160px;
+    height: 40px;
+
+    border: 1px solid #ff6c00;
+    color: var(--white-color);
+    background-color: inherit;
+    border-radius: 25px;
+    transition: color 250ms linear, background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+        border-radius: 25px;
+        background-color: var(--accent-color);
+        color: var(--white-color);
+    }
+
+    &:active {
+        background-color: #f18132;
+    }
+}
+
+
+.btn.btn-primary {
+    color: var(--text-color-secondary);
+}
+
+.btn-prices {
+    /* display: block; */
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-left-contacts {
+    background-color: inherit;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+
+    color: var(--white-color);
+}
+
+.btn-footer {
+    padding: 12px 38px;
+    margin-top: 44px;
+}

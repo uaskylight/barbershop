@@ -1,0 +1,123 @@
+.barbers {
+  padding: 120px 0;
+
+  background-color: var(--barbers-section);
+
+  &-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    color: var(--text-color);
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+
+  &-title {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+
+    margin-bottom: 45px;
+
+    color: var(--text-color);
+  }
+}
+
+  .barbers-list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+
+.barbers-block-overlame {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.barber-text-overlame {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 0;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding: 10px;
+  background-color: #ff6a00ad;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  overflow: scroll;
+}
+
+.barbers-item:hover .barber-text-overlame {
+  transform: translateY(0%);
+}
+
+.barbers-title-two {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+
+  color: var(--text-color);
+}
+
+.barbers-text-two {
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 30px;
+
+  color: var(--accent-color);
+}
+
+.barbers-list-network {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.barbers-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--title-color);
+  transition: fill 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: white;
+    background-color: var(--hover-color);
+  }
+}
+
+.barbers-icon {
+  fill: inherit;
+}

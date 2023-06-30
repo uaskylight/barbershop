@@ -1,0 +1,30 @@
+.photos {
+    padding: 120px 0;
+    background-color: var(--white-color);
+
+    &-text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.36;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+
+        color: var(--text-color);
+
+        &::before {
+            content: "";
+            width: 60px;
+            height: 1px;
+            background-color: currentColor;
+        }
+    }
+
+    &-list {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+}
