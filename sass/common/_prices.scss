@@ -5,7 +5,13 @@
     background-position: center;
     background-size: cover;
 
-    padding: 120px 0;
+    padding: 84px 0;
+
+    @include tablet {
+        padding: 84px 0;
+    }
+
+
 
     & .text {
         display: flex;
@@ -27,25 +33,83 @@
         }
     }
 
+    &-text {
+        font-size: 8px;
+        line-height: 1.66;
+        letter-spacing: 0.02em;
+
+        color: var(--second-color);
+
+        &:last-child {
+            order: 1;
+        }
+
+        @include mobile {
+            font-size: 11px;
+        }
+
+        @include tablet {
+            color: #9DA4BD;
+            font-size: 14px;
+            font-family: Open Sans;
+            line-height: 20px;
+            letter-spacing: 0.28px;
+        }
+    }
+
     &-block {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 45px;
+        background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
+
+        @include desktop {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &-list {
-        width: calc((100% - 30px) / 2);
+        @include desktop {
+            width: calc((100% - 30px) / 2);
+        }
 
         &-gradientleft {
-            background-image: linear-gradient(180deg,
-                    #171a24 0%,
-                    rgba(23, 26, 36, 0.2) 100%);
+
+            padding: 10px 20px 10px 20px;
+
+            @include mobile {
+                padding: 10px 40px 10px 40px;
+
+            }
+
+            @include tablet {
+                background-image: linear-gradient(180deg,
+                        #171a24 0%,
+                        rgba(23, 26, 36, 0.2) 100%);
+            }
+
+            @include desktop {
+                padding: 10px 20px 10px 20px;
+            }
+
         }
 
         &-gradientright {
-            background-image: linear-gradient(180deg,
-                    #171a24 0%,
-                    rgba(23, 26, 36, 0.2) 100%);
+            padding: 10px 20px 10px 20px;
+
+
+            @include mobile {
+                padding: 10px 40px 30px 40px;
+            }
+
+            @include tablet {
+                background-image: linear-gradient(180deg,
+                        #171a24 0%,
+                        rgba(23, 26, 36, 0.2) 100%);
+            }
+
+            @include desktop {
+                padding: 10px 20px 10px 20px;
+            }
         }
     }
 
@@ -72,7 +136,7 @@
     &-title {
         font-family: "Raleway";
         font-weight: 700;
-        font-size: 42px;
+        font-size: 40px;
         line-height: 1.16;
         letter-spacing: 0.05em;
         margin-bottom: 45px;
@@ -80,15 +144,4 @@
         color: var(--white-color);
     }
 
-    &-text {
-        font-size: 18px;
-        line-height: 1.66;
-        letter-spacing: 0.02em;
-
-        color: var(--second-color);
-
-        &:last-child {
-            order: 1;
-        }
-    }
 }

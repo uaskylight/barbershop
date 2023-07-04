@@ -1,28 +1,57 @@
 .about {
-    padding: 120px 0px;
+    padding: 84px 0;
     background-color: var(--white-color);
 
+    @include tablet {
+        padding: 120px 0px;
+
+    }
 
     &__container {
         display: flex;
         gap: 30px;
+
     }
 
     &__list {
-        display: flex;
-        gap: 30px;
+        display: none;
+
+        @include tablet {
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &__list li {
+            width: 30px;
+            display: inline-flex;
+            flex-direction: column;
+
+        }
+
+        &__list li {
+            width: 30px;
+            display: inline-flex;
+            flex-direction: column;
+
+        }
+
+        &__list img {
+            width: 100%;
+        }
     }
 
 
-    &texttop {
-        @include dFlex(flex,center,center);
+    &__texttop {
+        @include dFlex(flex, flex-start, center);
+        font-family: Open Sans;
         gap: 20px;
         font-weight: 600;
         font-size: 11px;
         line-height: 1.36;
         text-transform: uppercase;
 
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         color: var(--text-color);
 
         &::before {
@@ -35,17 +64,27 @@
 
     &__title {
         font-family: "Raleway";
-        @include fons(700,42px,49px,0.05em);
+        @include fons(700, 28px, null, 1.4px);
         margin-bottom: 20px;
 
         color: var(--text-color);
+
+        @include tablet {
+            @include fons(700, 42px, 49px, 0.05em);
+        }
     }
 
     &__texttwo {
-        @include fons(null, 18px,null,0.02em);
+        font-family: Open Sans;
+        @include fons(null, 16px, 26px, 0.32px);
         margin-bottom: 20px;
 
         color: var(--text-color-secondary);
+
+        @include tablet {
+            @include fons(null, 18px, null, 0.02em);
+
+        }
     }
 
     &__textbtm {
