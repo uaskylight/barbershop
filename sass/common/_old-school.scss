@@ -1,20 +1,46 @@
 .oldschool {
-    padding: 120px 0;
+    padding: 80px 0;
 
     background-color: var(--white-color);
 
-    &-container {
+    @include tablet {
+        padding: 120px 0;
+    }
+
+    @include desktop {
         display: flex;
-        padding-left: 100px;
-        gap: 130px;
+    }
+
+    &-container {
+        @include mobile {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 130px;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            padding-left: 100px;
+            gap: 130px;
+        }
     }
 
     &-list {
         display: flex;
-        width: 370px;
         flex-wrap: wrap;
         justify-content: center;
+
+        padding-bottom: 60px;
         background-color: #fff;
+
+        @include tablet {
+            justify-content: flex-end;
+        }
+
+        @include desktop {
+            justify-content: center;
+        }
     }
 
     &-block {
@@ -22,11 +48,24 @@
     }
 
     &-item {
-        width: 170px;
+        width: 133px;
+
         height: 133px;
         text-align: center;
         padding: 20px 24px;
         background: #f7f7f7;
+
+        @media screen and(min-width:420px) {
+            width: 170px;
+        }
+
+        @include mobile {
+            width: 194px;
+        }
+
+        @include tablet {
+            width: 230px;
+        }
 
         &:nth-child(odd) {
             margin-right: 30px;

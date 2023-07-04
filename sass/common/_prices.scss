@@ -60,7 +60,7 @@
     &-block {
         margin-bottom: 45px;
         background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.20) 100%);
-
+        
         @include desktop {
             display: flex;
             justify-content: space-between;
@@ -92,7 +92,6 @@
             }
 
         }
-
         &-gradientright {
             padding: 10px 20px 10px 20px;
 

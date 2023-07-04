@@ -514,30 +514,75 @@ ul {
 }
 
 .oldschool {
-  padding: 120px 0;
+  padding: 80px 0;
   background-color: var(--white-color);
 }
-.oldschool-container {
-  display: flex;
-  padding-left: 100px;
-  gap: 130px;
+@media screen and (min-width: 768px) {
+  .oldschool {
+    padding: 120px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .oldschool {
+    display: flex;
+  }
+}
+@media screen and (min-width: 480px) {
+  .oldschool-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 130px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .oldschool-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    gap: 130px;
+  }
 }
 .oldschool-list {
   display: flex;
-  width: 370px;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 60px;
   background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .oldschool-list {
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .oldschool-list {
+    justify-content: center;
+  }
 }
 .oldschool-block {
   max-width: 500px;
 }
 .oldschool-item {
-  width: 170px;
+  width: 133px;
   height: 133px;
   text-align: center;
   padding: 20px 24px;
   background: #f7f7f7;
+}
+@media screen and (min-width: 420px) {
+  .oldschool-item {
+    width: 170px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .oldschool-item {
+    width: 194px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .oldschool-item {
+    width: 230px;
+  }
 }
 .oldschool-item:nth-child(odd) {
   margin-right: 30px;
