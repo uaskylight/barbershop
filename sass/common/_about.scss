@@ -35,29 +35,21 @@
 
     &__title {
         font-family: "Raleway";
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 1.16;
-        letter-spacing: 0.05em;
-
+        @include fons(700,42px,49px,0.05em);
         margin-bottom: 20px;
 
         color: var(--text-color);
     }
 
     &__texttwo {
-        font-size: 18px;
-        line-height: 1.66;
-        letter-spacing: 0.02em;
+        @include fons(null, 18px,null,0.02em);
         margin-bottom: 20px;
 
         color: var(--text-color-secondary);
     }
 
     &__textbtm {
-        font-size: 14px;
-        line-height: 1.85;
-        letter-spacing: 0.02em;
+        @include fons(null, 14px, 26px, 0.02em);
         margin-bottom: 42px;
 
         color: var(--text-color-secondary);

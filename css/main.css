@@ -307,21 +307,21 @@ ul {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.16;
+  line-height: 1.1666666667;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
   color: var(--text-color);
 }
 .about__texttwo {
   font-size: 18px;
-  line-height: 1.66;
+  line-height: /18px;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
   color: var(--text-color-secondary);
 }
 .about__textbtm {
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.8571428571;
   letter-spacing: 0.02em;
   margin-bottom: 42px;
   color: var(--text-color-secondary);
