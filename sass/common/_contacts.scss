@@ -5,16 +5,26 @@
     background-position: right;
     background-size: 50% 100%;
 
-    padding: 120px 0;
+    padding: 80px 0;
+
+    @include desktop {
+        padding: 120px 0;
+    }
 }
 
 .contacts-container {
-    display: flex;
+    @include desktop{
+        display: flex;
+    }
 }
 
 .left-contacts {
-    max-width: 570px;
+    // max-width: 570px;
     flex-grow: 1;
+
+    @media screen and (max-width:1199px) {
+        width: 100%;
+    }
 }
 
 .left-contacts-title {
@@ -30,10 +40,13 @@
 
 .form-booking {
 
-    display: flex;
+    // display: flex;
     margin-bottom: 44px;
 
-
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .form-booking-label {
@@ -44,10 +57,18 @@
     font-weight: 600;
     letter-spacing: 1.1px;
     text-transform: uppercase;
+
+    @media screen and(max-width: 767px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .form-booking-label:not(:last-child) {
-    margin-right: 30px;
+
+    @include desktop {
+        margin-right: 30px;
+    }
 }
 
 .form-booking-label input {
@@ -58,6 +79,10 @@
     border-bottom: 1px solid #ffffff;
     color: #ffffff;
     outline: none;
+
+    @media screen and(max-width:767px) {
+        width: 100%;
+    }
 }
 
 .form-booking-label:focus-within,
@@ -103,7 +128,15 @@
 
 .right-contacts {
     flex-grow: 1;
-    padding-left: 100px;
+  
+    
+    @include desktop{
+        width: 785px;
+        display: flex;
+        flex-direction: column;
+
+        padding-left: 100px;
+    }
 }
 
 .contacts-title {

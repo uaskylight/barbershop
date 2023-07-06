@@ -1,6 +1,10 @@
 .photos {
-    padding: 120px 0;
+    padding: 80px 0;
     background-color: var(--white-color);
+
+    @include desktop {
+        padding: 120px 0;
+    }
 
     &-text {
         display: flex;
@@ -24,7 +28,32 @@
 
     &-list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
-        justify-content: space-between;
+
+        @include tablet {
+
+            gap: 30px;
+            // justify-content: space-between;
+        }
     }
+
+    &-item img {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include mobile {
+            width: 330px;
+            height: 360px;
+        }
+
+        @include desktop {
+            width: 270px;
+            height: 360px;
+        }
+    }
+
+
 }

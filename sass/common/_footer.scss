@@ -3,11 +3,15 @@ footer {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    align-items: center;
+
     padding: 55px 15px;
+
+    @include mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        align-items: center;
+    }
 }
 
 .footer-text {

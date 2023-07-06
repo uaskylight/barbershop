@@ -39,6 +39,10 @@ ul {
   list-style: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: OpenSans-Regular400;
   src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
@@ -640,8 +644,13 @@ ul {
 }
 
 .barbers {
-  padding: 120px 0;
+  padding: 80px 0;
   background-color: var(--barbers-section);
+}
+@media screen and (min-width: 768px) {
+  .barbers {
+    padding: 120px 0;
+  }
 }
 .barbers-text {
   display: flex;
@@ -671,15 +680,32 @@ ul {
 }
 
 .barbers-list {
-  display: flex;
-  gap: 30px;
+  margin-right: auto;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .barbers-list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .barbers-block-overlame {
   position: relative;
   margin-bottom: 30px;
   overflow: hidden;
+}
+
+.barbers-block-overlame img {
+  width: 100%;
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .barbers-block-overlame img {
+    max-width: 330px;
+  }
 }
 
 .barber-text-overlame {
@@ -749,8 +775,13 @@ ul {
 }
 
 .photos {
-  padding: 120px 0;
+  padding: 80px 0;
   background-color: var(--white-color);
+}
+@media screen and (min-width: 1200px) {
+  .photos {
+    padding: 120px 0;
+  }
 }
 .photos-text {
   display: flex;
@@ -771,8 +802,31 @@ ul {
 }
 .photos-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .photos-list {
+    gap: 30px;
+  }
+}
+.photos-item img {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .photos-item img {
+    width: 330px;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos-item img {
+    width: 270px;
+    height: 360px;
+  }
 }
 
 .section-contacts {
@@ -781,16 +835,27 @@ ul {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50% 100%;
-  padding: 120px 0;
+  padding: 80px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section-contacts {
+    padding: 120px 0;
+  }
 }
 
-.contacts-container {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    display: flex;
+  }
 }
 
 .left-contacts {
-  max-width: 570px;
   flex-grow: 1;
+}
+@media screen and (max-width: 1199px) {
+  .left-contacts {
+    width: 100%;
+  }
 }
 
 .left-contacts-title {
@@ -804,8 +869,13 @@ ul {
 }
 
 .form-booking {
-  display: flex;
   margin-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .form-booking {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .form-booking-label {
@@ -817,9 +887,17 @@ ul {
   letter-spacing: 1.1px;
   text-transform: uppercase;
 }
+@media screen and (max-width: 767px) {
+  .form-booking-label {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
-.form-booking-label:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .form-booking-label:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .form-booking-label input {
@@ -830,6 +908,11 @@ ul {
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   outline: none;
+}
+@media screen and (max-width: 767px) {
+  .form-booking-label input {
+    width: 100%;
+  }
 }
 
 .form-booking-label:focus-within,
@@ -865,7 +948,14 @@ ul {
 /* address */
 .right-contacts {
   flex-grow: 1;
-  padding-left: 100px;
+}
+@media screen and (min-width: 1200px) {
+  .right-contacts {
+    width: 785px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
 }
 
 .contacts-title {
@@ -1070,11 +1160,15 @@ footer {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  align-items: center;
   padding: 55px 15px;
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-items: center;
+  }
 }
 
 .footer-text {

@@ -100,16 +100,24 @@
           <ul class="about__list">
             <li>
               <img
+                srcset="
+                  ./images/2x/about/tablet/top/img.jpg    1x,
+                  ./images/2x/about/tablet/top/img_2x.jpg 2x
+                "
                 src="./images/2x/about/tablet/top/img.jpg"
                 alt="photo about us"
-                width="270"
+                width="270px"
               />
             </li>
             <li>
               <img
+                srcset="
+                  ./images/2x/about/tablet/under/img.jpg    1x,
+                  ./images/2x/about/tablet/under/img_2x.jpg 2x
+                "
                 src="./images/2x/about/tablet/under/img.jpg"
                 alt="photo about us"
-                width="270"
+                width="270px"
               />
             </li>
           </ul>
@@ -129,14 +137,12 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="btn btn__about" type="button">
-              ONLINE-BOOKING
-            </button>
+            <button class="btn btn__about" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
-      </section> 
+      </section>
       <!-- SECTION PRICES -->
-       <section class="prices" id="Services">
+      <section class="prices" id="Services">
         <div class="container prices-container">
           <p class="text">Spend your time with the best masters</p>
           <h2 class="prices-title" data-aos="fade-right">
@@ -186,7 +192,7 @@
         </div>
       </section>
       <!-- SECTION OLD TRADITIONAL SCHOOL -->
-       <section class="oldschool">
+      <section class="oldschool">
         <div class="container oldschool-container">
           <ul
             class="oldschool-list"
@@ -222,7 +228,7 @@
         </div>
       </section>
       <!-- SECTION OUR BARBERS -->
-      <!-- <section class="barbers" id="Barbers">
+      <section class="barbers" id="Barbers">
         <div class="container">
           <p class="barbers-text">For true enjoyers of the atmosphere</p>
           <h2 class="barbers-title" data-aos="fade-right">Our barbers</h2>
@@ -429,9 +435,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- SECTION PHOTOS -->
-       <!-- <section class="photos">
+      <section class="photos">
         <div class="container">
           <h2 class="visually-hidden">Gallery</h2>
           <p class="photos-text">In Latin, "barba" means "beard"</p>
@@ -466,9 +472,9 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section>
       <!-- SECTION CONTACTS -->
-      <!-- <section class="section-contacts" id="Contact">
+      <section class="section-contacts" id="Contact">
         <div class="container contacts-container">
           <div class="left-contacts">
             <h2 class="left-contacts-title" data-aos="fade-right">
@@ -497,8 +503,9 @@
             </button>
           </div>
           <div class="right-contacts">
-            <h2 class="contacts-title" data-aos="fade-right">Contacts</h2>
+         
             <address class="address">
+                 <h2 class="contacts-title" data-aos="fade-right">Contacts</h2>
               <ul class="address-list">
                 <li class="address-item">
                   <a
@@ -525,14 +532,16 @@
                 </li>
               </ul>
             </address>
-            <p class="address-text-work">Working hours</p>
-            <p class="address-text-time">Every day from 9:00 to 22:00</p>
+            <div>
+              <p class="address-text-work">Working hours</p>
+              <p class="address-text-time">Every day from 9:00 to 22:00</p>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- SECTION FOOTER -->
-    <!-- <footer>
+    <footer>
       <div class="footer container">
         <p class="footer-text">&#169;Copyright 2020</p>
         <ul class="footer-list">
@@ -556,7 +565,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button type="button" class="modal__btn" data-close-modal>X</button>
@@ -667,6 +676,7 @@
         //  }
       })();
     </script>
+    <script src="./js/mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
