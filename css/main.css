@@ -80,7 +80,6 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -209,16 +208,15 @@ ul {
 .hero {
   background-color: white;
 }
-.hero__container {
-  display: flex;
-}
-.hero__network {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  padding-left: 27px;
-  padding-bottom: 40px;
-  width: 100px;
+@media screen and (max-width: 767px) {
+  .hero__network {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    padding-bottom: 40px;
+    width: 100px;
+  }
 }
 
 .hero-list {
@@ -274,11 +272,21 @@ ul {
   gap: 10px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 72px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 32px;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) {
+  .hero-frame__title {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-frame__title {
+    font-size: 72px;
+  }
 }
 .hero-frame__title::before {
   content: "🔥";
@@ -946,6 +954,12 @@ ul {
 }
 
 /* address */
+@media screen and (max-width: 1199px) {
+  .address {
+    margin-top: 30px;
+  }
+}
+
 .right-contacts {
   flex-grow: 1;
 }
