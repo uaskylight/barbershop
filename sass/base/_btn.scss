@@ -26,7 +26,13 @@
     }
 
     &__header {
-        margin-right: 20px;
+        @include tablet {
+            margin-bottom: 20px;
+        }
+
+        @include desktop {
+            margin: 0;
+        }
     }
 
     &__about {
@@ -43,4 +49,43 @@
         padding: 12px 38px;
         margin-top: 44px;
     }
+}
+
+
+
+
+.open {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+}
+
+.modal-mobile {
+    position: absolute;
+    // width: 100vh;
+    height: 100vh;
+    background-color: red;
+    z-index: 99;
+    top: 0;
+    left: 40%;
+    transform: translateX(0);
+
+    transition: transform 450ms linear,
+        visibility 450ms linear, opacity 450ms linear;
+    ;
+
+}
+
+.modal-mobile.is-hidden {
+    transform: translateX(90%);
+    opacity: 1;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
 }

@@ -9,12 +9,18 @@
     &__container {
         display: flex;
         align-items: center;
+        // justify-content: space-between;
     }
 }
 
 .navigation {
-    display: flex;
-    margin-right: auto;
+    display: none;
+    // margin-right: auto;
+
+    @include tablet {
+        display: flex;
+        align-items: baseline;
+    }
 
     &__logo {
         cursor: pointer;
@@ -28,6 +34,10 @@
         &:focus {
             fill: var(--hover-color);
         }
+
+        @media screen and(max-width:767px) {
+            fill: white;
+        }
     }
 }
 
@@ -35,8 +45,28 @@
     &__data {
         display: flex;
         align-items: center;
-        margin-left: 130px;
+        margin-left: 100px;
         gap: 30px;
+
+        @media screen and (max-width:1199px) {
+            display: flex;
+            margin-left: 30px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media screen and (max-width:1199px) {
+            margin-left: 25px;
+        }
+
+        @include desktop {
+            align-items: center;
+            flex-direction: row;
+            margin-left: 185px;
+        }
     }
 
     &__link.current {
@@ -53,6 +83,8 @@
     }
 
     &__tel {
-        margin-right: 60px;
+        @include desktop {
+            margin-right: 60px;
+        }
     }
 }

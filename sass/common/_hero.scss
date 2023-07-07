@@ -2,19 +2,25 @@
     background-color: white;
 
     &__container {
-        // display: flex;
-       
+        padding: 0;
+        @include tablet{
+            display: flex;
+        }
     }
 
     &__network {
-      @media screen and(max-width:767px) {
+        display: none;
         width: 100%;
+       
+        align-items: flex-end;
+        padding-left: 27px;
+        padding-bottom: 40px;
+        width: 100px;
+
+        @include tablet {
             display: flex;
-            align-items: flex-end;
-            padding-left: 27px;
-            padding-bottom: 40px;
-            width: 100px;
-      }
+
+        }
     }
 }
 
@@ -97,10 +103,10 @@
         color: #ffffff;
 
         @include mobile {
-                font-size: 45px;
-            }
+            font-size: 45px;
+        }
 
-        @include tablet{
+        @include tablet {
             font-size: 72px;
         }
 
