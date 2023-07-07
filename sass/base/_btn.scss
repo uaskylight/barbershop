@@ -60,32 +60,21 @@
     margin-left: auto;
     width: 40px;
     height: 40px;
-    background-color: blue;
+    background-color: transparent;
+    border: 0;
+
+    fill: white;
+
+    @include tablet {
+        display: none;
+    }
 }
 
-.modal-mobile {
-    position: absolute;
-    // width: 100vh;
-    height: 100vh;
-    background-color: red;
-    z-index: 99;
-    top: 0;
-    left: 40%;
-    transform: translateX(0);
-
-    transition: transform 450ms linear,
-        visibility 450ms linear, opacity 450ms linear;
-    ;
-
-}
-
-.modal-mobile.is-hidden {
-    transform: translateX(90%);
-    opacity: 1;
-}
-
-.close {
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
+.btn__mobile {
+    color: #303030;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
 }

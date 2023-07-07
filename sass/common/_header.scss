@@ -88,3 +88,129 @@
         }
     }
 }
+
+
+
+.container-mobile {
+    padding: 40px;
+}
+
+.mobile-frame-under {}
+
+.modal-mobile {
+    display: none;
+
+    @media screen and (max-width:767px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        opacity: 1;
+        background-color: rgb(255, 255, 255);
+        z-index: 99;
+        left: 40%;
+        transform: translateX(0);
+
+        transition: transform 450ms linear,
+            visibility 450ms linear, opacity 450ms linear;
+    }
+}
+
+
+.close {
+    display: block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    fill: grey;
+    border: 0;
+}
+
+
+.mobile-frame {}
+
+.mobile-frame__list {
+    margin-bottom: 64px;
+}
+
+.mobile-frame__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-frame__link.current {
+    color: #FF6C00;
+}
+
+.mobile-frame__link {
+    color: #303030;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.mobile-frame__contact {
+    margin-bottom: 74px;
+}
+
+.mobile-frame__contact li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.mobile-frame__tel {}
+
+.btn {}
+
+.btn__header {}
+
+
+.mobile-frame__contact {}
+
+.mobile-frame__link {}
+
+.navigation-list__tel {}
+
+.link {}
+
+.btn {}
+
+.btn__header {}
+
+.mobile-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.mobile-list::before {
+    @include mobile {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 20%;
+        height: 1px;
+        background: #303030;
+
+    }
+}
+
+.mobile-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.mobile-list__link {
+    color: #303030;
+    font-size: 14px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.8px;
+}

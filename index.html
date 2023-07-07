@@ -22,18 +22,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <button class="open" data-mobile-open>O</button>
-
-    <div class="modal-mobile is-hidden" data-mobile>
-        <button class="close" data-mobile-close>O</button>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo tenetur
-          perspiciatis nobis error? Quod repellendus saepe, obcaecati sunt
-          dolorem illo nulla modi odit? Totam nulla ratione veritatis illum,
-          nobis eveniet!
-        </p>
-    </div>
-
     <!-- HEADER -->
     <header class="header header__frame">
       <div class="container header__container">
@@ -76,8 +64,72 @@
             </li>
           </ul>
         </nav>
+        <button class="open" data-mobile-open>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#mobile-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <div class="modal-mobile is-hidden" data-mobile>
+      <div class="container-mobile">
+        <button class="close" data-mobile-close>
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#mobile-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-frame">
+          <ul class="mobile-frame__list">
+            <li class="mobile-frame__item">
+              <a class="mobile-frame__link link current" href="#About">About</a>
+            </li>
+            <li class="mobile-frame__item">
+              <a class="mobile-frame__link link" href="#Services"
+                >Services and prices</a
+              >
+            </li>
+            <li class="mobile-frame__item">
+              <a class="mobile-frame__link link" href="#Barbers">Barbers</a>
+            </li>
+            <li class="mobile-frame__item">
+              <a class="mobile-frame__link link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+          <ul class="mobile-frame__contact">
+            <li>
+              <a
+                class="mobile-frame__link navigation-list__tel link"
+                href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <button class="btn btn__header btn__mobile">Online-booking</button>
+            </li>
+          </ul>
+                      <ul class="mobile-list">
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-list__item">
+                <a
+                  class="mobile-list__link link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
     <!-- MAIN -->
     <main>
       <!-- SECTION HERO -->
@@ -695,6 +747,8 @@
     </script>
     <script src="./js/mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    AOS.init();
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

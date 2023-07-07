@@ -63,9 +63,14 @@
             width: 194px;
         }
 
-        @include tablet {
+        @media screen and(min-width:672px) and (max-width:719px) {
+            width: 210px;
+        }
+
+        @media screen and(min-width:720px){
             width: 230px;
         }
+
 
         &:nth-child(odd) {
             margin-right: 30px;

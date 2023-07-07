@@ -40,5 +40,11 @@
     <symbol id="icon-vector" viewBox="0 0 42 32">
       <path stroke-width=".64" d="m6.263 15.205-.22-.21-3.307 3.132 11.651 11.114L38.864 5.89l-3.285-3.134-21.192 20.197-8.124-7.75z"/>
     </symbol>
+    <symbol id="mobile-close" viewBox="0 0 32 32">
+<path d="M5.86 4.040l-1.82 1.82 10.14 10.14-10.2 10.22 1.8 1.8 10.22-10.2 10.2 10.2 1.82-1.82-10.2-10.2 10.14-10.14-1.82-1.82-10.14 10.14z"></path>
+</symbol>
+<symbol id="mobile-open" viewBox="0 0 32 32">
+<path d="M0 5.76v1.28h32v-1.28zM0 15.36v1.28h32v-1.28zM0 24.96v1.28h32v-1.28z"></path>
+</symbol>
 </defs>
 </svg>
